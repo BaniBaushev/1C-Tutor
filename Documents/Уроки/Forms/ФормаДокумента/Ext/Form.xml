@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Основное" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основное</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ScrollOnCompress>true</ScrollOnCompress>
+			<ExtendedTooltip name="ОсновноеРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="Номер" id="3">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;Авто&gt;</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="НомерКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="5"/>
+					<SelectedItemsActionsPanel name="НомерПанельДействийВыделенныхСтрок" id="6"/>
+				</InputField>
+				<UsualGroup name="ГруппаНомерДата" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа номер дата</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа номер дата</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНомерДатаРасширеннаяПодсказка" id="24"/>
+					<ChildItems>
+						<InputField name="Дата" id="7">
+							<DataPath>Объект.Date</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="9"/>
+							<SelectedItemsActionsPanel name="ДатаПанельДействийВыделенныхСтрок" id="10"/>
+						</InputField>
+						<InputField name="СтатусУрока" id="33">
+							<DataPath>Объект.СтатусУрока</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Статус</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СтатусУрокаКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="СтатусУрокаРасширеннаяПодсказка" id="35"/>
+							<SelectedItemsActionsPanel name="СтатусУрокаПанельДействийВыделенныхСтрок" id="36"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаДанныеУрока" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа данные урока</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа данные урока</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДанныеУрокаРасширеннаяПодсказка" id="26"/>
+					<ChildItems>
+						<InputField name="Ученик" id="11">
+							<DataPath>Объект.Ученик</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="УченикКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="УченикРасширеннаяПодсказка" id="13"/>
+							<SelectedItemsActionsPanel name="УченикПанельДействийВыделенныхСтрок" id="14"/>
+						</InputField>
+						<InputField name="Тема" id="15">
+							<DataPath>Объект.Тема</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТемаКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="ТемаРасширеннаяПодсказка" id="17"/>
+							<SelectedItemsActionsPanel name="ТемаПанельДействийВыделенныхСтрок" id="18"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="СписаниеОплаты" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Списание оплаты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Списание оплаты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="СписаниеОплатыРасширеннаяПодсказка" id="32"/>
+					<ChildItems>
+						<CheckBoxField name="ЭтоПробныйУрок" id="37">
+							<DataPath>Объект.ЭтоПробныйУрок</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЭтоПробныйУрокКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ЭтоПробныйУрокРасширеннаяПодсказка" id="39"/>
+							<SelectedItemsActionsPanel name="ЭтоПробныйУрокПанельДействийВыделенныхСтрок" id="40"/>
+							<Events>
+								<Event name="OnChange">ЭтоПробныйУрокПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<CheckBoxField name="СписатьОплатуЗаУрок" id="19">
+							<DataPath>1/0:e2d60231-bcf3-4ca6-a517-8cfdf0bd2bf2</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СписатьОплатуЗаУрокКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="СписатьОплатуЗаУрокРасширеннаяПодсказка" id="21"/>
+							<SelectedItemsActionsPanel name="СписатьОплатуЗаУрокПанельДействийВыделенныхСтрок" id="22"/>
+						</CheckBoxField>
+						<CheckBoxField name="УченикБудетПродолжатьОбучение" id="45">
+							<DataPath>Объект.УченикБудетПродолжатьОбучение</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="УченикБудетПродолжатьОбучениеКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="УченикБудетПродолжатьОбучениеРасширеннаяПодсказка" id="47"/>
+							<SelectedItemsActionsPanel name="УченикБудетПродолжатьОбучениеПанельДействийВыделенныхСтрок" id="48"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="Комментарий" id="41">
+					<DataPath>Объект.Комментарий</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ChoiceButton>true</ChoiceButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="43"/>
+					<SelectedItemsActionsPanel name="КомментарийПанельДействийВыделенныхСтрок" id="44"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Уроки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
