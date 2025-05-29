@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Enum uuid="7d64e436-9aa0-4ec0-b483-7c3747827a50">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СтатусыУрока" category="Ref">
+				<xr:TypeId>5a937933-351d-47b3-b6cb-5fdcaf585255</xr:TypeId>
+				<xr:ValueId>0e142e76-26e8-4089-93a5-55c1ffb2977d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СтатусыУрока" category="Manager">
+				<xr:TypeId>1fa1b912-b4c3-46af-9a99-5fc268fcf634</xr:TypeId>
+				<xr:ValueId>e931ce05-156d-41ec-a3fc-ce37d1d40bc4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СтатусыУрока" category="List">
+				<xr:TypeId>17c78ed6-6194-4a76-86cc-4a14daf92ae3</xr:TypeId>
+				<xr:ValueId>7dda3571-d522-448e-b0af-e8ae0f3b4afe</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СтатусыУрока</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статусы урока</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="d9ea07d9-5a48-4072-a30e-61681f76f991">
+				<Properties>
+					<Name>УрокПроведен</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Урок проведен</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Color>style:AccentColor</Color>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9d7e7ee0-8952-416d-8f73-034a08a26874">
+				<Properties>
+					<Name>УченикНеПришел</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ученик не пришел</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Color>style:ImportantColor</Color>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5f9ab26d-f561-4e07-add5-ba4c6e09027d">
+				<Properties>
+					<Name>Запланирован</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запланирован</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Color>auto</Color>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

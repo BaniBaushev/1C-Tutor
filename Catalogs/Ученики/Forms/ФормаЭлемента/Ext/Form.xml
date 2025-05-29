@@ -1,0 +1,736 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>AlwaysHorizontal</Group>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаКарточкаУченика" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа карточка ученика</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа карточка ученика</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКарточкаУченикаРасширеннаяПодсказка" id="24"/>
+			<ChildItems>
+				<Pages name="СтраницыКарточкаУченика" id="143">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страницы карточка ученика</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страницы карточка ученика</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницыКарточкаУченикаРасширеннаяПодсказка" id="144"/>
+					<ChildItems>
+						<Page name="СтраницаОбщаяИнформация" id="145">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основное</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница общая информация</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="СтраницаОбщаяИнформацияРасширеннаяПодсказка" id="146"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаКодФИО" id="13">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа код ФИО</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>WeakSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКодФИОРасширеннаяПодсказка" id="14"/>
+									<ChildItems>
+										<InputField name="Код" id="1">
+											<DataPath>Объект.Code</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+											<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+											<SelectedItemsActionsPanel name="КодПанельДействийВыделенныхСтрок" id="17"/>
+										</InputField>
+										<InputField name="Наименование" id="4">
+											<DataPath>Объект.Description</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+											<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+											<SelectedItemsActionsPanel name="НаименованиеПанельДействийВыделенныхСтрок" id="18"/>
+										</InputField>
+										<InputField name="УровеньЯзыка" id="7">
+											<DataPath>Объект.УровеньЯзыка</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="УровеньЯзыкаКонтекстноеМеню" id="8"/>
+											<ExtendedTooltip name="УровеньЯзыкаРасширеннаяПодсказка" id="9"/>
+											<SelectedItemsActionsPanel name="УровеньЯзыкаПанельДействийВыделенныхСтрок" id="19"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаВремяТариф" id="21">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа время тариф</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа время тариф</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаВремяТарифРасширеннаяПодсказка" id="22"/>
+									<ChildItems>
+										<InputField name="Тариф" id="87">
+											<DataPath>Объект.Тариф</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТарифКонтекстноеМеню" id="88"/>
+											<ExtendedTooltip name="ТарифРасширеннаяПодсказка" id="89"/>
+											<SelectedItemsActionsPanel name="ТарифПанельДействийВыделенныхСтрок" id="90"/>
+										</InputField>
+										<InputField name="ТекущееВремяУченика" id="153">
+											<DataPath>ТекущееВремяУченика</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТекущееВремяУченикаКонтекстноеМеню" id="154"/>
+											<ExtendedTooltip name="ТекущееВремяУченикаРасширеннаяПодсказка" id="155"/>
+											<SelectedItemsActionsPanel name="ТекущееВремяУченикаПанельДействийВыделенныхСтрок" id="156"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаИнформация" id="77">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа информация</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа информация</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИнформацияРасширеннаяПодсказка" id="78"/>
+									<ChildItems>
+										<InputField name="Интересы" id="79">
+											<DataPath>Объект.Интересы</DataPath>
+											<Height>5</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<MultiLine>true</MultiLine>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ИнтересыКонтекстноеМеню" id="80"/>
+											<ExtendedTooltip name="ИнтересыРасширеннаяПодсказка" id="81"/>
+											<SelectedItemsActionsPanel name="ИнтересыПанельДействийВыделенныхСтрок" id="82"/>
+										</InputField>
+										<InputField name="Цели" id="83">
+											<DataPath>Объект.Цели</DataPath>
+											<Height>10</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<MultiLine>true</MultiLine>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ЦелиКонтекстноеМеню" id="84"/>
+											<ExtendedTooltip name="ЦелиРасширеннаяПодсказка" id="85"/>
+											<SelectedItemsActionsPanel name="ЦелиПанельДействийВыделенныхСтрок" id="86"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+						<Page name="СтраницаКонтакты" id="147">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контакты</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница контакты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="СтраницаКонтактыРасширеннаяПодсказка" id="148"/>
+							<ChildItems>
+								<InputField name="Телеграм" id="149">
+									<DataPath>Объект.Телеграм</DataPath>
+									<MultiLine>false</MultiLine>
+									<ClearButton>false</ClearButton>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТелеграмКонтекстноеМеню" id="150"/>
+									<ExtendedTooltip name="ТелеграмРасширеннаяПодсказка" id="151"/>
+									<SelectedItemsActionsPanel name="ТелеграмПанельДействийВыделенныхСтрок" id="152"/>
+								</InputField>
+								<InputField name="ЧасовойПояс" id="10">
+									<DataPath>Объект.ЧасовойПояс</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ЧасовойПоясКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ЧасовойПоясРасширеннаяПодсказка" id="12"/>
+									<SelectedItemsActionsPanel name="ЧасовойПоясПанельДействийВыделенныхСтрок" id="20"/>
+								</InputField>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+				<Table name="ЖелаемыеУроки" id="103">
+					<TitleLocation>Top</TitleLocation>
+					<HeightInTableRows>4</HeightInTableRows>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ЖелаемыеУроки</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ЖелаемыеУрокиКонтекстноеМеню" id="104"/>
+					<AutoCommandBar name="ЖелаемыеУрокиКоманднаяПанель" id="105"/>
+					<ExtendedTooltip name="ЖелаемыеУрокиРасширеннаяПодсказка" id="106"/>
+					<SearchStringAddition name="ЖелаемыеУрокиСтрокаПоиска" id="107">
+						<AdditionSource>
+							<Item>ЖелаемыеУроки</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ЖелаемыеУрокиСтрокаПоискаКонтекстноеМеню" id="108"/>
+						<ExtendedTooltip name="ЖелаемыеУрокиСтрокаПоискаРасширеннаяПодсказка" id="109"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ЖелаемыеУрокиСостояниеПросмотра" id="110">
+						<AdditionSource>
+							<Item>ЖелаемыеУроки</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ЖелаемыеУрокиСостояниеПросмотраКонтекстноеМеню" id="111"/>
+						<ExtendedTooltip name="ЖелаемыеУрокиСостояниеПросмотраРасширеннаяПодсказка" id="112"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ЖелаемыеУрокиУправлениеПоиском" id="113">
+						<AdditionSource>
+							<Item>ЖелаемыеУроки</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ЖелаемыеУрокиУправлениеПоискомКонтекстноеМеню" id="114"/>
+						<ExtendedTooltip name="ЖелаемыеУрокиУправлениеПоискомРасширеннаяПодсказка" id="115"/>
+					</SearchControlAddition>
+					<SelectedItemsActionsPanel name="ЖелаемыеУрокиПанельДействийВыделенныхСтрок" id="116"/>
+					<ChildItems>
+						<LabelField name="ЖелаемыеУрокиНомерСтроки" id="118">
+							<DataPath>Объект.ЖелаемыеУроки.LineNumber</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ContextMenu name="ЖелаемыеУрокиНомерСтрокиКонтекстноеМеню" id="119"/>
+							<ExtendedTooltip name="ЖелаемыеУрокиНомерСтрокиРасширеннаяПодсказка" id="120"/>
+							<SelectedItemsActionsPanel name="ЖелаемыеУрокиНомерСтрокиПанельДействийВыделенныхСтрок" id="121"/>
+						</LabelField>
+						<InputField name="ЖелаемыеУрокиТема" id="122">
+							<DataPath>Объект.ЖелаемыеУроки.Тема</DataPath>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<Width>30</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ЖелаемыеУрокиТемаКонтекстноеМеню" id="123"/>
+							<ExtendedTooltip name="ЖелаемыеУрокиТемаРасширеннаяПодсказка" id="124"/>
+							<SelectedItemsActionsPanel name="ЖелаемыеУрокиТемаПанельДействийВыделенныхСтрок" id="125"/>
+						</InputField>
+						<CheckBoxField name="ЖелаемыеУрокиПроведен" id="126">
+							<DataPath>Объект.ЖелаемыеУроки.Проведен</DataPath>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЖелаемыеУрокиПроведенКонтекстноеМеню" id="127"/>
+							<ExtendedTooltip name="ЖелаемыеУрокиПроведенРасширеннаяПодсказка" id="128"/>
+							<SelectedItemsActionsPanel name="ЖелаемыеУрокиПроведенПанельДействийВыделенныхСтрок" id="129"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДинамическихСписков" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>WeakSeparation</Representation>
+			<ExtendedTooltip name="ГруппаДинамическихСписковРасширеннаяПодсказка" id="16"/>
+			<ChildItems>
+				<LabelField name="Баланс" id="91">
+					<DataPath>Баланс</DataPath>
+					<TitleLocation>Left</TitleLocation>
+					<HorizontalAlign>Right</HorizontalAlign>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<ContextMenu name="БалансКонтекстноеМеню" id="92"/>
+					<ExtendedTooltip name="БалансРасширеннаяПодсказка" id="93"/>
+					<SelectedItemsActionsPanel name="БалансПанельДействийВыделенныхСтрок" id="94"/>
+				</LabelField>
+				<Pages name="Страницы" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страницы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страницы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<Page name="Оплата" id="50">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Оплата</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Оплата</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ОплатаРасширеннаяПодсказка" id="51"/>
+							<ChildItems>
+								<Table name="ИсторияОплат" id="25">
+									<UseAlternationRowColorBWA>true</UseAlternationRowColorBWA>
+									<EnableStartDrag>true</EnableStartDrag>
+									<DataPath>ИсторияОплат</DataPath>
+									<RowPictureDataPath>~ИсторияОплат.DefaultPicture</RowPictureDataPath>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+									<ContextMenu name="ИсторияОплатКонтекстноеМеню" id="26"/>
+									<AutoCommandBar name="ИсторияОплатКоманднаяПанель" id="27">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="ИсторияОплатПополнитьБалансУченика" id="133">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПополнитьБалансУченика</CommandName>
+												<ExtendedTooltip name="ИсторияОплатПополнитьБалансУченикаРасширеннаяПодсказка" id="134"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ИсторияОплатРасширеннаяПодсказка" id="28"/>
+									<SearchStringAddition name="ИсторияОплатСтрокаПоиска" id="29">
+										<AdditionSource>
+											<Item>ИсторияОплат</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ИсторияОплатСтрокаПоискаКонтекстноеМеню" id="30"/>
+										<ExtendedTooltip name="ИсторияОплатСтрокаПоискаРасширеннаяПодсказка" id="31"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ИсторияОплатСостояниеПросмотра" id="32">
+										<AdditionSource>
+											<Item>ИсторияОплат</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ИсторияОплатСостояниеПросмотраКонтекстноеМеню" id="33"/>
+										<ExtendedTooltip name="ИсторияОплатСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ИсторияОплатУправлениеПоиском" id="35">
+										<AdditionSource>
+											<Item>ИсторияОплат</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ИсторияОплатУправлениеПоискомКонтекстноеМеню" id="36"/>
+										<ExtendedTooltip name="ИсторияОплатУправлениеПоискомРасширеннаяПодсказка" id="37"/>
+									</SearchControlAddition>
+									<SelectedItemsActionsPanel name="ИсторияОплатПанельДействийВыделенныхСтрок" id="38"/>
+									<ChildItems>
+										<LabelField name="ИсторияОплатДата" id="40">
+											<DataPath>ИсторияОплат.Дата</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ИсторияОплатДатаКонтекстноеМеню" id="41"/>
+											<ExtendedTooltip name="ИсторияОплатДатаРасширеннаяПодсказка" id="42"/>
+											<SelectedItemsActionsPanel name="ИсторияОплатДатаПанельДействийВыделенныхСтрок" id="43"/>
+										</LabelField>
+										<LabelField name="ИсторияОплатСумма" id="44">
+											<DataPath>ИсторияОплат.Сумма</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ИсторияОплатСуммаКонтекстноеМеню" id="45"/>
+											<ExtendedTooltip name="ИсторияОплатСуммаРасширеннаяПодсказка" id="46"/>
+											<SelectedItemsActionsPanel name="ИсторияОплатСуммаПанельДействийВыделенныхСтрок" id="47"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="Уроки" id="52">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Уроки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Уроки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="УрокиРасширеннаяПодсказка" id="53"/>
+							<ChildItems>
+								<Table name="ИсторияУроков" id="54">
+									<ReadOnly>true</ReadOnly>
+									<UseAlternationRowColorBWA>true</UseAlternationRowColorBWA>
+									<EnableStartDrag>true</EnableStartDrag>
+									<DataPath>ИсторияУроков</DataPath>
+									<RowPictureDataPath>~ИсторияУроков.DefaultPicture</RowPictureDataPath>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+									<ContextMenu name="ИсторияУроковКонтекстноеМеню" id="55"/>
+									<AutoCommandBar name="ИсторияУроковКоманднаяПанель" id="56">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="ИсторияУроковСоздатьНовыйУрок" id="135">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.СоздатьНовыйУрок</CommandName>
+												<ExtendedTooltip name="ИсторияУроковСоздатьНовыйУрокРасширеннаяПодсказка" id="136"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ИсторияУроковРасширеннаяПодсказка" id="57"/>
+									<SearchStringAddition name="ИсторияУроковСтрокаПоиска" id="58">
+										<AdditionSource>
+											<Item>ИсторияУроков</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ИсторияУроковСтрокаПоискаКонтекстноеМеню" id="59"/>
+										<ExtendedTooltip name="ИсторияУроковСтрокаПоискаРасширеннаяПодсказка" id="60"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ИсторияУроковСостояниеПросмотра" id="61">
+										<AdditionSource>
+											<Item>ИсторияУроков</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ИсторияУроковСостояниеПросмотраКонтекстноеМеню" id="62"/>
+										<ExtendedTooltip name="ИсторияУроковСостояниеПросмотраРасширеннаяПодсказка" id="63"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ИсторияУроковУправлениеПоиском" id="64">
+										<AdditionSource>
+											<Item>ИсторияУроков</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ИсторияУроковУправлениеПоискомКонтекстноеМеню" id="65"/>
+										<ExtendedTooltip name="ИсторияУроковУправлениеПоискомРасширеннаяПодсказка" id="66"/>
+									</SearchControlAddition>
+									<SelectedItemsActionsPanel name="ИсторияУроковПанельДействийВыделенныхСтрок" id="67"/>
+									<ChildItems>
+										<LabelField name="ИсторияУроковДата" id="69">
+											<DataPath>ИсторияУроков.Дата</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ИсторияУроковДатаКонтекстноеМеню" id="70"/>
+											<ExtendedTooltip name="ИсторияУроковДатаРасширеннаяПодсказка" id="71"/>
+											<SelectedItemsActionsPanel name="ИсторияУроковДатаПанельДействийВыделенныхСтрок" id="72"/>
+										</LabelField>
+										<LabelField name="ИсторияУроковСумма" id="97">
+											<DataPath>ИсторияУроков.Сумма</DataPath>
+											<ContextMenu name="ИсторияУроковСуммаКонтекстноеМеню" id="98"/>
+											<ExtendedTooltip name="ИсторияУроковСуммаРасширеннаяПодсказка" id="99"/>
+											<SelectedItemsActionsPanel name="ИсторияУроковСуммаПанельДействийВыделенныхСтрок" id="100"/>
+										</LabelField>
+										<LabelField name="ИсторияУроковТема" id="73">
+											<DataPath>ИсторияУроков.Тема</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ИсторияУроковТемаКонтекстноеМеню" id="74"/>
+											<ExtendedTooltip name="ИсторияУроковТемаРасширеннаяПодсказка" id="75"/>
+											<SelectedItemsActionsPanel name="ИсторияУроковТемаПанельДействийВыделенныхСтрок" id="76"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Ученики</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Баланс" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Баланс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИсторияОплат" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История оплат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ПоступлениеДС.Дата КАК Дата,
+	ПоступлениеДС.Сумма КАК Сумма
+ИЗ
+	Документ.ПоступлениеДС КАК ПоступлениеДС
+ГДЕ
+	ПоступлениеДС.Проведен
+	И ПоступлениеДС.Ученик = &amp;Ученик</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Сумма</dcssch:dataPath>
+					<dcssch:field>Сумма</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>Ученик</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ученик</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.Ученики</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ИсторияУроков" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История уроков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	БалансУченика.Период КАК Дата,
+	БалансУченика.Ученик КАК Ученик,
+	БалансУченика.Сумма КАК Сумма,
+	БалансУченика.Регистратор.Тема КАК Тема
+ИЗ
+	РегистрНакопления.БалансУченика КАК БалансУченика
+ГДЕ
+	БалансУченика.Регистратор ССЫЛКА Документ.Уроки
+	И БалансУченика.Ученик = &amp;Ученик</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ученик</dcssch:dataPath>
+					<dcssch:field>Ученик</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Сумма</dcssch:dataPath>
+					<dcssch:field>Сумма</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Тема</dcssch:dataPath>
+					<dcssch:field>Тема</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тема</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Parameter>
+					<dcssch:name>Ученик</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ученик</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.Ученики</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТекущееВремяУченика" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущее время ученика</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПополнитьБалансУченика" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пополнить баланс ученика</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пополнить баланс ученика</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПополнитьБалансУченика</Action>
+		</Command>
+		<Command name="СоздатьНовыйУрок" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать новый урок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать новый урок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьНовыйУрок</Action>
+		</Command>
+	</Commands>
+</Form>
