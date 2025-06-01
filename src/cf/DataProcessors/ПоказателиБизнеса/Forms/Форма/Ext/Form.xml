@@ -181,22 +181,72 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаПоказателиРасширеннаяПодсказка" id="36"/>
 							<ChildItems>
-								<InputField name="ПроведеноУроков" id="13">
-									<DataPath>ПроведеноУроков</DataPath>
-									<ReadOnly>true</ReadOnly>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="ПроведеноУроковКонтекстноеМеню" id="14"/>
-									<ExtendedTooltip name="ПроведеноУроковРасширеннаяПодсказка" id="15"/>
-									<SelectedItemsActionsPanel name="ПроведеноУроковПанельДействийВыделенныхСтрок" id="16"/>
-								</InputField>
-								<InputField name="Заработано" id="17">
-									<DataPath>Заработано</DataPath>
-									<ReadOnly>true</ReadOnly>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="ЗаработаноКонтекстноеМеню" id="18"/>
-									<ExtendedTooltip name="ЗаработаноРасширеннаяПодсказка" id="19"/>
-									<SelectedItemsActionsPanel name="ЗаработаноПанельДействийВыделенныхСтрок" id="20"/>
-								</InputField>
+								<UsualGroup name="ГруппаУроки" id="45">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа уроки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа уроки</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаУрокиРасширеннаяПодсказка" id="46"/>
+									<ChildItems>
+										<InputField name="ПроведеноУроков" id="13">
+											<DataPath>ПроведеноУроков</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПроведеноУроковКонтекстноеМеню" id="14"/>
+											<ExtendedTooltip name="ПроведеноУроковРасширеннаяПодсказка" id="15"/>
+											<SelectedItemsActionsPanel name="ПроведеноУроковПанельДействийВыделенныхСтрок" id="16"/>
+										</InputField>
+										<Button name="НовыйУрок" id="47">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ДобавитьУрок</CommandName>
+											<ExtendedTooltip name="НовыйУрокРасширеннаяПодсказка" id="48"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаДоход" id="49">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа доход</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа доход</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДоходРасширеннаяПодсказка" id="50"/>
+									<ChildItems>
+										<InputField name="Заработано" id="17">
+											<DataPath>Заработано</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ЗаработаноКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="ЗаработаноРасширеннаяПодсказка" id="19"/>
+											<SelectedItemsActionsPanel name="ЗаработаноПанельДействийВыделенныхСтрок" id="20"/>
+										</InputField>
+										<Button name="ПополнениеБалансаУченика" id="51">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ПополнениеБаланса</CommandName>
+											<ExtendedTooltip name="ПополнениеБалансаУченикаРасширеннаяПодсказка" id="52"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
 								<InputField name="СуммаНалога" id="21">
 									<DataPath>СуммаНалога</DataPath>
 									<ReadOnly>true</ReadOnly>
@@ -211,14 +261,45 @@
 									<ExtendedTooltip name="СуммаНалогаРасширеннаяПодсказка" id="23"/>
 									<SelectedItemsActionsPanel name="СуммаНалогаПанельДействийВыделенныхСтрок" id="24"/>
 								</InputField>
-								<InputField name="ДополнительныеРасходы" id="41">
-									<DataPath>ДополнительныеРасходы</DataPath>
-									<ReadOnly>true</ReadOnly>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="ДополнительныеРасходыКонтекстноеМеню" id="42"/>
-									<ExtendedTooltip name="ДополнительныеРасходыРасширеннаяПодсказка" id="43"/>
-									<SelectedItemsActionsPanel name="ДополнительныеРасходыПанельДействийВыделенныхСтрок" id="44"/>
-								</InputField>
+								<UsualGroup name="ГруппаДопРасходы" id="53">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа доп расходы</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа доп расходы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДопРасходыРасширеннаяПодсказка" id="54"/>
+									<ChildItems>
+										<InputField name="ДополнительныеРасходы" id="41">
+											<DataPath>ДополнительныеРасходы</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ДополнительныеРасходыКонтекстноеМеню" id="42"/>
+											<ExtendedTooltip name="ДополнительныеРасходыРасширеннаяПодсказка" id="43"/>
+											<SelectedItemsActionsPanel name="ДополнительныеРасходыПанельДействийВыделенныхСтрок" id="44"/>
+										</InputField>
+										<Button name="ДобавитьДопРасходы" id="55">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ДобавитьДопРасходы</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Добавить расходы</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ДобавитьДопРасходыРасширеннаяПодсказка" id="56"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
 								<InputField name="ЧистаяПрибыль" id="25">
 									<DataPath>ЧистаяПрибыль</DataPath>
 									<ReadOnly>true</ReadOnly>
@@ -377,6 +458,48 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Следующий месяц</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="ДобавитьУрок" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить урок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить урок</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="ПополнениеБаланса" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пополнение баланса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пополнение баланса</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="ДобавитьДопРасходы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить доп расходы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить доп расходы</v8:content>
 				</v8:item>
 			</ToolTip>
 		</Command>
