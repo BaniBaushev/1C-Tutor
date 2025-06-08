@@ -1,0 +1,19 @@
+name: 1C Smoke Tests
+on: [push, pull_request]
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    container:
+      image: silverbulleters/vanessa-runner:latest  # Готовый образ с Vanessa
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run smoke tests
+        run: |
+          oscript ./vanessa/runner.bsl --path ./tests/features/smoke
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results
+          path: ./tests/results/
