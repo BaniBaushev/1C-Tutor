@@ -147,9 +147,13 @@
 									<VerticalAlign>Center</VerticalAlign>
 									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<Hiperlink>true</Hiperlink>
 									<ContextMenu name="ПериодОтчетаКонтекстноеМеню" id="32"/>
 									<ExtendedTooltip name="ПериодОтчетаРасширеннаяПодсказка" id="33"/>
 									<SelectedItemsActionsPanel name="ПериодОтчетаПанельДействийВыделенныхСтрок" id="34"/>
+									<Events>
+										<Event name="Click">ПериодОтчетаНажатие</Event>
+									</Events>
 								</LabelField>
 								<Button name="СледующийМесяц" id="37">
 									<Type>UsualButton</Type>
@@ -446,6 +450,7 @@
 					<v8:content>Предыдущий месяц</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Action>ПредыдущийМесяц</Action>
 		</Command>
 		<Command name="СледующийМесяц" id="2">
 			<Title>
@@ -460,6 +465,7 @@
 					<v8:content>Следующий месяц</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Action>СледующийМесяц</Action>
 		</Command>
 		<Command name="ДобавитьУрок" id="3">
 			<Title>
